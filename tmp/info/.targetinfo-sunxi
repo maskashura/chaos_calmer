@@ -2,7 +2,7 @@ Source-Makefile: target/linux/sunxi/Makefile
 Target: sunxi
 Target-Board: sunxi
 Target-Name: Allwinner A1x/A20/A3x
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: arm
 Target-Arch-Packages: sunxi
 Target-Features: display dt ext4 fpu gpio rtc usb

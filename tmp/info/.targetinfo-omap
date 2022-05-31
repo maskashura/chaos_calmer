@@ -2,7 +2,7 @@ Source-Makefile: target/linux/omap/Makefile
 Target: omap
 Target-Board: omap
 Target-Name: TI OMAP3/4/AM33xx
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: arm
 Target-Arch-Packages: omap
 Target-Features: display dt ext4 gpio rtc targz usb

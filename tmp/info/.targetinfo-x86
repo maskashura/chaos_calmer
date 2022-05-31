@@ -2,7 +2,7 @@ Source-Makefile: target/linux/x86/Makefile
 Target: x86
 Target-Board: x86
 Target-Name: x86
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: i386
 Target-Arch-Packages: x86
 Target-Features: display ext4 pci pcmcia rtc squashfs targz usb vdi vmdk

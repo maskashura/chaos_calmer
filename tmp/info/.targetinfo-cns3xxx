@@ -2,7 +2,7 @@ Source-Makefile: target/linux/cns3xxx/Makefile
 Target: cns3xxx
 Target-Board: cns3xxx
 Target-Name: Cavium Networks Econa CNS3xxx
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: arm
 Target-Arch-Packages: cns3xxx
 Target-Features: dt fpu gpio pci pcie rtc squashfs usb usbgadget

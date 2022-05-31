@@ -2,7 +2,7 @@ Source-Makefile: target/linux/adm5120/Makefile
 Target: adm5120
 Target-Board: adm5120
 Target-Name: Infineon/ADMtek ADM5120
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: 
 Target-Arch-Packages: adm5120
 Target-Features: gpio low_mem pci usb

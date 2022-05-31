@@ -2,7 +2,7 @@ Source-Makefile: target/linux/brcm63xx/Makefile
 Target: brcm63xx
 Target-Board: brcm63xx
 Target-Name: Broadcom BCM63xx
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: mips
 Target-Arch-Packages: brcm63xx
 Target-Features: atm dt gpio pci pcie pcmcia squashfs usb usbgadget

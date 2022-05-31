@@ -2,7 +2,7 @@ Source-Makefile: target/linux/mvebu/Makefile
 Target: mvebu
 Target-Board: mvebu
 Target-Name: Marvell Armada 37x/38x/XP
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: arm
 Target-Arch-Packages: mvebu
 Target-Features: dt gpio nand pci pcie rtc squashfs usb

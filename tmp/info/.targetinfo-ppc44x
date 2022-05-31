@@ -2,7 +2,7 @@ Source-Makefile: target/linux/ppc44x/Makefile
 Target: ppc44x
 Target-Board: ppc44x
 Target-Name: AMCC/IBM PPC44x
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: powerpc
 Target-Arch-Packages: ppc44x
 Target-Features: dt gpio pci pcie squashfs usb

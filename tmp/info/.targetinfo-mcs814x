@@ -2,7 +2,7 @@ Source-Makefile: target/linux/mcs814x/Makefile
 Target: mcs814x
 Target-Board: mcs814x
 Target-Name: Moschip MCS814x
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: arm
 Target-Arch-Packages: mcs814x
 Target-Features: dt gpio low_mem squashfs usb

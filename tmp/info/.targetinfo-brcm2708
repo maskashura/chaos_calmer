@@ -2,7 +2,7 @@ Source-Makefile: target/linux/brcm2708/Makefile
 Target: brcm2708
 Target-Board: brcm2708
 Target-Name: Broadcom BCM2708/BCM2709
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: arm
 Target-Arch-Packages: brcm2708
 Target-Features: audio display ext4 gpio usb usbgadget

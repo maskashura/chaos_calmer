@@ -2,7 +2,7 @@ Source-Makefile: target/linux/gemini/Makefile
 Target: gemini
 Target-Board: gemini
 Target-Name: Cortina Systems CS351x
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: arm
 Target-Arch-Packages: gemini
 Target-Features: gpio pci rtc squashfs usb

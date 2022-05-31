@@ -2,7 +2,7 @@ Source-Makefile: target/linux/brcm47xx/Makefile
 Target: brcm47xx
 Target-Board: brcm47xx
 Target-Name: Broadcom BCM47xx/53xx (MIPS)
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: mipsel
 Target-Arch-Packages: brcm47xx
 Target-Features: gpio pci squashfs usb

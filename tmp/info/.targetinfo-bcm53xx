@@ -2,7 +2,7 @@ Source-Makefile: target/linux/bcm53xx/Makefile
 Target: bcm53xx
 Target-Board: bcm53xx
 Target-Name: Broadcom BCM47xx/53xx (ARM)
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: arm
 Target-Arch-Packages: bcm53xx
 Target-Features: dt gpio nand pci pcie squashfs usb

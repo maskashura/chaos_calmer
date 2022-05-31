@@ -2,7 +2,7 @@ Source-Makefile: target/linux/oxnas/Makefile
 Target: oxnas
 Target-Board: oxnas
 Target-Name: PLXTECH/Oxford NAS782x/OX82x
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: arm
 Target-Arch-Packages: oxnas
 Target-Features: dt gpio nand pci pcie ramdisk rtc squashfs ubifs usb

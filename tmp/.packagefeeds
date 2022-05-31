@@ -2853,6 +2853,7 @@ Package/mailman/feed = packages
 Package/mailsend/feed = packages
 Package/mailsend-nossl/feed = packages
 Package/map-t/feed = routing
+Package/mbusd/feed = packages
 Package/mc/feed = packages
 Package/mcproxy/feed = routing
 Package/mdns-utils/feed = packages

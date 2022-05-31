@@ -2,7 +2,7 @@ Source-Makefile: target/linux/mxs/Makefile
 Target: mxs
 Target-Board: mxs
 Target-Name: Freescale i.MX23/i.MX28
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: arm
 Target-Arch-Packages: mxs
 Target-Features: dt ext4 gpio rtc usb usbgadget

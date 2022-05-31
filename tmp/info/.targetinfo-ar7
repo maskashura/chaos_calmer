@@ -2,7 +2,7 @@ Source-Makefile: target/linux/ar7/Makefile
 Target: ar7
 Target-Board: ar7
 Target-Name: TI AR7
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: mipsel
 Target-Arch-Packages: ar7
 Target-Features: atm gpio low_mem squashfs

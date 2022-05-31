@@ -2,7 +2,7 @@ Source-Makefile: target/linux/netlogic/Makefile
 Target: netlogic
 Target-Board: netlogic
 Target-Name: Broadcom/Netlogic XLP/XLR
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: mips64
 Target-Arch-Packages: netlogic
 Target-Features: dt ext4 jffs2 pci squashfs usb

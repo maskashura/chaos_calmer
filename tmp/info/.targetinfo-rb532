@@ -2,7 +2,7 @@ Source-Makefile: target/linux/rb532/Makefile
 Target: rb532
 Target-Board: rb532
 Target-Name: Mikrotik RouterBoard 532
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: mipsel
 Target-Arch-Packages: rb532
 Target-Features: gpio pci targz

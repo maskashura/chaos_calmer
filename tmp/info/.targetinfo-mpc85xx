@@ -2,7 +2,7 @@ Source-Makefile: target/linux/mpc85xx/Makefile
 Target: mpc85xx
 Target-Board: mpc85xx
 Target-Name: Freescale MPC85xx
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: powerpc
 Target-Arch-Packages: mpc85xx
 Target-Features: dt gpio pci pcie spe_fpu squashfs usb

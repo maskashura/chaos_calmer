@@ -2,7 +2,7 @@ Source-Makefile: target/linux/lantiq/Makefile
 Target: lantiq
 Target-Board: lantiq
 Target-Name: Lantiq
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: 
 Target-Arch-Packages: lantiq
 Target-Features: dt gpio pci squashfs

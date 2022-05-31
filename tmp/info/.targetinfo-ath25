@@ -2,7 +2,7 @@ Source-Makefile: target/linux/ath25/Makefile
 Target: ath25
 Target-Board: ath25
 Target-Name: Atheros AR231x/AR5312
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: mips
 Target-Arch-Packages: ath25
 Target-Features: gpio low_mem pci squashfs usb

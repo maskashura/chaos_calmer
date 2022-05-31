@@ -2,7 +2,7 @@ Source-Makefile: target/linux/uml/Makefile
 Target: uml
 Target-Board: uml
 Target-Name: User Mode Linux
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: x86_64
 Target-Arch-Packages: uml
 Target-Features: audio ext4

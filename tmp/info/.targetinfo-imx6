@@ -2,7 +2,7 @@ Source-Makefile: target/linux/imx6/Makefile
 Target: imx6
 Target-Board: imx6
 Target-Name: Freescale i.MX 6
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: arm
 Target-Arch-Packages: imx6
 Target-Features: audio display dt fpu gpio nand pci pcie rtc squashfs targz ubifs usb usbgadget

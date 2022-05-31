@@ -2,7 +2,7 @@ Source-Makefile: target/linux/ixp4xx/Makefile
 Target: ixp4xx
 Target-Board: ixp4xx
 Target-Name: Intel IXP4xx
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: armeb
 Target-Arch-Packages: ixp4xx
 Target-Features: gpio pci rtc squashfs usb

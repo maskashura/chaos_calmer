@@ -2,7 +2,7 @@ Source-Makefile: target/linux/kirkwood/Makefile
 Target: kirkwood
 Target-Board: kirkwood
 Target-Name: Marvell Kirkwood
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: arm
 Target-Arch-Packages: kirkwood
 Target-Features: dt gpio jffs2_nand nand pci rtc targz ubifs usb

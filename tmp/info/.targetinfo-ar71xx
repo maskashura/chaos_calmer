@@ -2,7 +2,7 @@ Source-Makefile: target/linux/ar71xx/Makefile
 Target: ar71xx
 Target-Board: ar71xx
 Target-Name: Atheros AR7xxx/AR9xxx
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: mips
 Target-Arch-Packages: ar71xx
 Target-Features: gpio mips16 pci usb

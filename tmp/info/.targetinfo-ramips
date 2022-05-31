@@ -2,7 +2,7 @@ Source-Makefile: target/linux/ramips/Makefile
 Target: ramips
 Target-Board: ramips
 Target-Name: Ralink RT288x/RT3xxx
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: mipsel
 Target-Arch-Packages: ramips
 Target-Features: gpio squashfs

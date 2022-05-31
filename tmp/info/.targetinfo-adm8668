@@ -2,7 +2,7 @@ Source-Makefile: target/linux/adm8668/Makefile
 Target: adm8668
 Target-Board: adm8668
 Target-Name: Infineon WildPass ADM8668
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: mipsel
 Target-Arch-Packages: adm8668
 Target-Features: gpio pci squashfs usb

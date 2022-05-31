@@ -2,7 +2,7 @@ Source-Makefile: target/linux/adm5120/Makefile
 Target: adm5120
 Target-Board: adm5120
 Target-Name: Infineon/ADMtek ADM5120
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: 
 Target-Arch-Packages: adm5120
 Target-Features: gpio low_mem pci usb
@@ -374,7 +374,7 @@ Source-Makefile: target/linux/adm8668/Makefile
 Target: adm8668
 Target-Board: adm8668
 Target-Name: Infineon WildPass ADM8668
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: mipsel
 Target-Arch-Packages: adm8668
 Target-Features: gpio pci squashfs usb
@@ -404,7 +404,7 @@ Source-Makefile: target/linux/ar7/Makefile
 Target: ar7
 Target-Board: ar7
 Target-Name: TI AR7
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: mipsel
 Target-Arch-Packages: ar7
 Target-Features: atm gpio low_mem squashfs
@@ -508,7 +508,7 @@ Source-Makefile: target/linux/ar71xx/Makefile
 Target: ar71xx
 Target-Board: ar71xx
 Target-Name: Atheros AR7xxx/AR9xxx
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: mips
 Target-Arch-Packages: ar71xx
 Target-Features: gpio mips16 pci usb
@@ -2262,7 +2262,7 @@ Source-Makefile: target/linux/arm64/Makefile
 Target: arm64
 Target-Board: arm64
 Target-Name: ARMv8 multiplatform
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: aarch64
 Target-Arch-Packages: arm64
 Target-Features: display dt fpu gpio pci ramdisk
@@ -2281,7 +2281,7 @@ Source-Makefile: target/linux/at91/Makefile
 Target: at91
 Target-Board: at91
 Target-Name: Atmel AT91
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: arm
 Target-Arch-Packages: at91
 Target-Features: dt ext2 gpio rtc squashfs targz ubifs usb usbgadget
@@ -2456,7 +2456,7 @@ Source-Makefile: target/linux/ath25/Makefile
 Target: ath25
 Target-Board: ath25
 Target-Name: Atheros AR231x/AR5312
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: mips
 Target-Arch-Packages: ath25
 Target-Features: gpio low_mem pci squashfs usb
@@ -2475,7 +2475,7 @@ Source-Makefile: target/linux/au1000/Makefile
 Target: au1000
 Target-Board: au1000
 Target-Name: RMI/AMD AU1x00
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: mipsel
 Target-Arch-Packages: au1000
 Target-Features: gpio pci squashfs usb
@@ -2571,7 +2571,7 @@ Source-Makefile: target/linux/bcm53xx/Makefile
 Target: bcm53xx
 Target-Board: bcm53xx
 Target-Name: Broadcom BCM47xx/53xx (ARM)
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: arm
 Target-Arch-Packages: bcm53xx
 Target-Features: dt gpio nand pci pcie squashfs usb
@@ -2601,7 +2601,7 @@ Source-Makefile: target/linux/brcm2708/Makefile
 Target: brcm2708
 Target-Board: brcm2708
 Target-Name: Broadcom BCM2708/BCM2709
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: arm
 Target-Arch-Packages: brcm2708
 Target-Features: audio display ext4 gpio usb usbgadget
@@ -2677,7 +2677,7 @@ Source-Makefile: target/linux/brcm47xx/Makefile
 Target: brcm47xx
 Target-Board: brcm47xx
 Target-Name: Broadcom BCM47xx/53xx (MIPS)
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: mipsel
 Target-Arch-Packages: brcm47xx
 Target-Features: gpio pci squashfs usb
@@ -3060,7 +3060,7 @@ Source-Makefile: target/linux/brcm63xx/Makefile
 Target: brcm63xx
 Target-Board: brcm63xx
 Target-Name: Broadcom BCM63xx
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: mips
 Target-Arch-Packages: brcm63xx
 Target-Features: atm dt gpio pci pcie pcmcia squashfs usb usbgadget
@@ -5399,7 +5399,7 @@ Source-Makefile: target/linux/cns3xxx/Makefile
 Target: cns3xxx
 Target-Board: cns3xxx
 Target-Name: Cavium Networks Econa CNS3xxx
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: arm
 Target-Arch-Packages: cns3xxx
 Target-Features: dt fpu gpio pci pcie rtc squashfs usb usbgadget
@@ -5419,7 +5419,7 @@ Source-Makefile: target/linux/gemini/Makefile
 Target: gemini
 Target-Board: gemini
 Target-Name: Cortina Systems CS351x
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: arm
 Target-Arch-Packages: gemini
 Target-Features: gpio pci rtc squashfs usb
@@ -5472,7 +5472,7 @@ Source-Makefile: target/linux/imx6/Makefile
 Target: imx6
 Target-Board: imx6
 Target-Name: Freescale i.MX 6
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: arm
 Target-Arch-Packages: imx6
 Target-Features: audio display dt fpu gpio nand pci pcie rtc squashfs targz ubifs usb usbgadget
@@ -5537,7 +5537,7 @@ Source-Makefile: target/linux/ixp4xx/Makefile
 Target: ixp4xx
 Target-Board: ixp4xx
 Target-Name: Intel IXP4xx
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: armeb
 Target-Arch-Packages: ixp4xx
 Target-Features: gpio pci rtc squashfs usb
@@ -5662,7 +5662,7 @@ Source-Makefile: target/linux/kirkwood/Makefile
 Target: kirkwood
 Target-Board: kirkwood
 Target-Name: Marvell Kirkwood
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: arm
 Target-Arch-Packages: kirkwood
 Target-Features: dt gpio jffs2_nand nand pci rtc targz ubifs usb
@@ -5821,7 +5821,7 @@ Source-Makefile: target/linux/lantiq/Makefile
 Target: lantiq
 Target-Board: lantiq
 Target-Name: Lantiq
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: 
 Target-Arch-Packages: lantiq
 Target-Features: dt gpio pci squashfs
@@ -6264,7 +6264,7 @@ Source-Makefile: target/linux/malta/Makefile
 Target: malta
 Target-Board: malta
 Target-Name: MIPS Malta CoreLV board (qemu)
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: 
 Target-Arch-Packages: malta
 Target-Features: pci rtc usb
@@ -6319,7 +6319,7 @@ Source-Makefile: target/linux/mcs814x/Makefile
 Target: mcs814x
 Target-Board: mcs814x
 Target-Name: Moschip MCS814x
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: arm
 Target-Arch-Packages: mcs814x
 Target-Features: dt gpio low_mem squashfs usb
@@ -6366,7 +6366,7 @@ Source-Makefile: target/linux/mpc85xx/Makefile
 Target: mpc85xx
 Target-Board: mpc85xx
 Target-Name: Freescale MPC85xx
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: powerpc
 Target-Arch-Packages: mpc85xx
 Target-Features: dt gpio pci pcie spe_fpu squashfs usb
@@ -6479,7 +6479,7 @@ Source-Makefile: target/linux/mvebu/Makefile
 Target: mvebu
 Target-Board: mvebu
 Target-Name: Marvell Armada 37x/38x/XP
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: arm
 Target-Arch-Packages: mvebu
 Target-Features: dt gpio nand pci pcie rtc squashfs usb
@@ -6648,7 +6648,7 @@ Source-Makefile: target/linux/mxs/Makefile
 Target: mxs
 Target-Board: mxs
 Target-Name: Freescale i.MX23/i.MX28
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: arm
 Target-Arch-Packages: mxs
 Target-Features: dt ext4 gpio rtc usb usbgadget
@@ -6697,7 +6697,7 @@ Source-Makefile: target/linux/netlogic/Makefile
 Target: netlogic
 Target-Board: netlogic
 Target-Name: Broadcom/Netlogic XLP/XLR
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: mips64
 Target-Arch-Packages: netlogic
 Target-Features: dt ext4 jffs2 pci squashfs usb
@@ -6750,7 +6750,7 @@ Source-Makefile: target/linux/octeon/Makefile
 Target: octeon
 Target-Board: octeon
 Target-Name: Cavium Networks Octeon
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: mips64
 Target-Arch-Packages: octeon
 Target-Features: dt ext4 gpio initramfs jffs2 pci squashfs usb
@@ -6779,7 +6779,7 @@ Source-Makefile: target/linux/omap/Makefile
 Target: omap
 Target-Board: omap
 Target-Name: TI OMAP3/4/AM33xx
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: arm
 Target-Arch-Packages: omap
 Target-Features: display dt ext4 gpio rtc targz usb
@@ -6819,7 +6819,7 @@ Source-Makefile: target/linux/oxnas/Makefile
 Target: oxnas
 Target-Board: oxnas
 Target-Name: PLXTECH/Oxford NAS782x/OX82x
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: arm
 Target-Arch-Packages: oxnas
 Target-Features: dt gpio nand pci pcie ramdisk rtc squashfs ubifs usb
@@ -6880,7 +6880,7 @@ Source-Makefile: target/linux/ppc44x/Makefile
 Target: ppc44x
 Target-Board: ppc44x
 Target-Name: AMCC/IBM PPC44x
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: powerpc
 Target-Arch-Packages: ppc44x
 Target-Features: dt gpio pci pcie squashfs usb
@@ -6899,7 +6899,7 @@ Source-Makefile: target/linux/ramips/Makefile
 Target: ramips
 Target-Board: ramips
 Target-Name: Ralink RT288x/RT3xxx
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: mipsel
 Target-Arch-Packages: ramips
 Target-Features: gpio squashfs
@@ -7797,7 +7797,7 @@ Source-Makefile: target/linux/rb532/Makefile
 Target: rb532
 Target-Board: rb532
 Target-Name: Mikrotik RouterBoard 532
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: mipsel
 Target-Arch-Packages: rb532
 Target-Features: gpio pci targz
@@ -7816,7 +7816,7 @@ Source-Makefile: target/linux/realview/Makefile
 Target: realview
 Target-Board: realview
 Target-Name: ARM Ltd. Realview board (qemu)
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: arm
 Target-Arch-Packages: realview
 Target-Features: display fpu ramdisk
@@ -7835,7 +7835,7 @@ Source-Makefile: target/linux/sunxi/Makefile
 Target: sunxi
 Target-Board: sunxi
 Target-Name: Allwinner A1x/A20/A3x
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: arm
 Target-Arch-Packages: sunxi
 Target-Features: display dt ext4 fpu gpio rtc usb
@@ -8004,7 +8004,7 @@ Source-Makefile: target/linux/uml/Makefile
 Target: uml
 Target-Board: uml
 Target-Name: User Mode Linux
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: x86_64
 Target-Arch-Packages: uml
 Target-Features: audio ext4
@@ -8023,7 +8023,7 @@ Source-Makefile: target/linux/x86/Makefile
 Target: x86
 Target-Board: x86
 Target-Name: x86
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: i386
 Target-Arch-Packages: x86
 Target-Features: display ext4 pci pcmcia rtc squashfs targz usb vdi vmdk
@@ -8214,7 +8214,7 @@ Source-Makefile: target/linux/xburst/Makefile
 Target: xburst
 Target-Board: xburst
 Target-Name: Ingenic XBurst
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: mipsel
 Target-Arch-Packages: xburst
 Target-Features: audio display gpio nand rtc targz ubifs usb

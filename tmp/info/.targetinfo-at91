@@ -2,7 +2,7 @@ Source-Makefile: target/linux/at91/Makefile
 Target: at91
 Target-Board: at91
 Target-Name: Atmel AT91
-Target-Path: /home/bruce/github/openwrt
+Target-Path: /home/bruce/openwrt
 Target-Arch: arm
 Target-Arch-Packages: at91
 Target-Features: dt ext2 gpio rtc squashfs targz ubifs usb usbgadget
