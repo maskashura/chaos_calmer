@@ -1,0 +1,21 @@
+Source-Makefile: feeds/linkit/mtk-sdk-wifi/Makefile
+Package: mtk-sdk-wifi
+Version: 2015-06-01-ade8b1b299cbd5748db1acf80dd3e9f567938371
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_ramips_mt7688_LinkIt7688 +wireless-tools +libuci
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: ralink
+Category: Ralink SDK
+Title: MT7628/88 SDK Wifi
+Maintainer: 
+Source: mtk-sdk-wifi-2015-06-01-ade8b1b299cbd5748db1acf80dd3e9f567938371.tar.gz
+License: GPL-2.0
+Type: ipkg
+Description:   Wireless information library with consistent interface for proprietary Broadcom,
+  madwifi, nl80211 and wext driver interfaces.
+  Command line frontend for the wireless information library.
+
+@@
+
+

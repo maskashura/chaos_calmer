@@ -1,0 +1,19 @@
+Source-Makefile: feeds/linkit/mtk-linkit-webui/Makefile
+Package: mtk-linkit-webui
+Version: 2015-07-07-3676d579f7fc56dd9b07f2f75233acfbced7f032
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_ramips_mt7688_LinkIt7688
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: Extra packages
+Title: LinkIt Smart 7688 Webui
+Maintainer: 
+Source: mtk-linkit-webui-2015-07-07-3676d579f7fc56dd9b07f2f75233acfbced7f032.tar.gz
+Type: ipkg
+Hidden: 1
+Description: LinkIt Smart 7688 Webui
+
+@@
+
+

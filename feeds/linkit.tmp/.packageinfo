@@ -1,0 +1,60 @@
+Source-Makefile: feeds/linkit/mtk-linkit/Makefile
+Package: mtk-linkit
+Default: y
+Version: 1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_ramips_mt7688_LinkIt7688 +gdbserver +curl +strace +coreutils +coreutils-stty +avahi-nodbus-daemon +mountd +mjpg-streamer +uhttpd +rpcd +rpcd-mod-iwinfo +git +git-http +samba36-server +python +python-pyserial +python-pip +hidapi +libmraa +libupm +node +node-hid +node-cylon-firmata +yunbridge +luci +luci-theme-openwrt +luci-app-mjpg-streamer +luci-app-samba +luci-lib-json +rpcd-mod-rpcsys +cgi-io +avrdude +spi-tools +uboot-envtools +kmod-fs-vfat +kmod-fs-exfat +kmod-i2c-core +kmod-i2c-ralink +kmod-nls-base +kmod-nls-cp437 +kmod-nls-iso8859-1 +kmod-nls-iso8859-15 +kmod-nls-iso8859-2 +kmod-nls-utf8 +kmod-sdhci-mt7620 +kmod-usb-storage +kmod-video-core +kmod-video-uvc +kmod-sound-core +kmod-sound-mtk +madplay-alsa +alsa-utils +mtk-linkit-webui +mtk-sdk-wifi +tcpdump-mini
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: Base system
+Title: MTK LinkIt Smart board support package
+Maintainer: 
+Source: 
+Type: ipkg
+Hidden: 1
+Description: MTK LinkIt Smart board support package
+
+@@
+
+
+Source-Makefile: feeds/linkit/mtk-linkit-webui/Makefile
+Package: mtk-linkit-webui
+Version: 2015-07-07-3676d579f7fc56dd9b07f2f75233acfbced7f032
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_ramips_mt7688_LinkIt7688
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: opt
+Category: Extra packages
+Title: LinkIt Smart 7688 Webui
+Maintainer: 
+Source: mtk-linkit-webui-2015-07-07-3676d579f7fc56dd9b07f2f75233acfbced7f032.tar.gz
+Type: ipkg
+Hidden: 1
+Description: LinkIt Smart 7688 Webui
+
+@@
+
+
+Source-Makefile: feeds/linkit/mtk-sdk-wifi/Makefile
+Package: mtk-sdk-wifi
+Version: 2015-06-01-ade8b1b299cbd5748db1acf80dd3e9f567938371
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread @TARGET_ramips_mt7688_LinkIt7688 +wireless-tools +libuci
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Section: ralink
+Category: Ralink SDK
+Title: MT7628/88 SDK Wifi
+Maintainer: 
+Source: mtk-sdk-wifi-2015-06-01-ade8b1b299cbd5748db1acf80dd3e9f567938371.tar.gz
+License: GPL-2.0
+Type: ipkg
+Description:   Wireless information library with consistent interface for proprietary Broadcom,
+  madwifi, nl80211 and wext driver interfaces.
+  Command line frontend for the wireless information library.
+
+@@
+
+
