@@ -1,0 +1,15 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/bruce/github/packages/net/mbusd'
+make: Leaving directory '/home/bruce/github/packages/net/mbusd'
+ 
+Makefile:1: /rules.mk: No such file or directory
+Makefile:15: /package.mk: No such file or directory
+Makefile:16: /cmake.mk: No such file or directory
+make: *** No rule to make target '/cmake.mk'.
+make: *** No rule to make target '/package.mk'.
+make: *** No rule to make target '/rules.mk'.
+make: Failed to remake makefile '/cmake.mk'.
+make: Failed to remake makefile '/package.mk'.
+make: Failed to remake makefile '/rules.mk'.
+make: *** No targets specified and no makefile found.  Stop.
+
