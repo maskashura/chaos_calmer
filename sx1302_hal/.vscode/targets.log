@@ -1,0 +1,1881 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make all -e -C libtools
+ 
+# GNU Make 4.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2014 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Sat Jun  4 19:03:44 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+DESKTOP_SESSION = Lubuntu
+# default
+.SHELLFLAGS := -c
+# environment
+XDG_SESSION_TYPE = x11
+# environment
+VSCODE_LOG_NATIVE = false
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# makefile (from 'Makefile', line 13)
+INCLUDES = $(wildcard inc/*.h)
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+XAUTHORITY = /home/bruce/.Xauthority
+# environment
+GDMSESSION = Lubuntu
+# default
+MAKE_VERSION := 4.1
+# environment under -e
+CURDIR = /home/bruce/github/openwrt/sx1302_hal
+# makefile
+SHELL = /bin/sh
+# environment
+GDM_LANG = en_US
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+_ = /usr/bin/code
+# makefile (from 'Makefile', line 10)
+CFLAGS := -O2 -Wall -Wextra -std=c99 -Iinc -I.
+# environment
+XDG_CONFIG_DIRS = /etc/xdg/lubuntu:/etc/xdg/xdg-Lubuntu:/etc/xdg
+# environment under -e
+MAKEFILE_LIST =  Makefile
+# automatic
+@F = $(notdir $@)
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment under -e
+MAKELEVEL := 1
+# environment
+MANDATORY_PATH = /usr/share/gconf/Lubuntu.mandatory.path
+# environment
+XDG_DATA_DIRS = /etc/xdg/lubuntu:/usr/local/share:/usr/share:/usr/share/gdm:/var/lib/menu-xdg:/usr/share/Lubuntu:/usr/local/share/:/usr/share/
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:abstract=/tmp/dbus-APu3yFsH8b,guid=9f81add14c406721bcc3295f629b0f8d
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
+# environment
+LC_NAME = lzh_TW
+# environment
+VSCODE_CWD = /home/bruce/github/openwrt/sx1302_hal
+# environment
+XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session0
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+PATH = /home/bruce/bin:/home/bruce/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+# environment
+_LXSESSION_PID = 1272
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# environment
+LC_ALL = C
+# makefile (from 'Makefile', line 8)
+AR := ar
+# environment
+XDG_MENU_PREFIX = lxde-
+# environment
+VSCODE_LOG_STACK = false
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# environment
+XDG_GREETER_DATA_DIR = /var/lib/lightdm-data/bruce
+# environment
+LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+# environment
+XDG_SESSION_DESKTOP = Lubuntu
+# environment
+SSH_AUTH_SOCK = /tmp/ssh-vbig37v2Vxx4/agent.1272
+# automatic
+%F = $(notdir $%)
+# environment
+DISPLAY = :0
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+PWD = /home/bruce/github/openwrt/sx1302_hal
+# environment
+QT_QPA_PLATFORMTHEME = lxqt
+# environment
+XDG_SEAT = seat0
+# environment
+SSH_AGENT_PID = 1318
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = LXDE
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/bruce
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
+# environment
+VSCODE_CLI = 1
+# environment
+VSCODE_CODE_CACHE_PATH = /home/bruce/.config/Code/CachedData/da15b6fd3ef856477bf6f4fb29ba1b7af717770d
+# environment
+LOGNAME = bruce
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# automatic
++F = $(notdir $+)
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+XDG_VTNR = 7
+# environment
+LC_TIME = lzh_TW
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 1
+# makefile (from 'Makefile', line 7)
+CC := gcc
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-0b6eceae-5821-4e87-85cd-d3c051951595.sock
+# environment
+XDG_SESSION_ID = c2
+# environment
+USER = bruce
+# environment
+LC_MONETARY = lzh_TW
+# makefile
+.DEFAULT_GOAL := all
+# environment
+XDG_CURRENT_DESKTOP = LXDE
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+SAL_USE_VCLPLUGIN = gtk
+# environment
+LC_TELEPHONE = lzh_TW
+# default
+MAKE_COMMAND := make
+# environment
+OLDPWD = /home/bruce/github/openwrt
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# environment
+LANGUAGE = en_US
+# environment
+XDG_SEAT_PATH = /org/freedesktop/DisplayManager/Seat0
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-dae61406-1.67.1-main.sock
+# environment
+ARCH = 
+# environment under -e
+MAKEFLAGS = epqrRw
+# environment under -e
+MFLAGS = -epqrRw
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+GDK_BACKEND = x11
+# environment
+QT_PLATFORM_PLUGIN = lxqt
+# environment
+LC_PAPER = lzh_TW
+# environment
+NO_AT_BRIDGE = 1
+# environment
+DEFAULTS_PATH = /usr/share/gconf/Lubuntu.default.path
+# environment
+CROSS_COMPILE = 
+# default
+MAKEFILES := 
+# environment
+LC_NUMERIC = lzh_TW
+# automatic
+<F = $(notdir $<)
+# makefile (from 'Makefile', line 12)
+OBJDIR = obj
+# environment
+LC_MEASUREMENT = lzh_TW
+# environment
+XDG_CONFIG_HOME = /home/bruce/.config
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# environment
+LC_IDENTIFICATION = lzh_TW
+# default
+.RECIPEPREFIX := 
+# environment
+LC_ADDRESS = lzh_TW
+# environment
+LANG = C
+# environment
+TERM = xterm
+# environment
+VSCODE_PID = 2207
+# variable set hash-table stats:
+# Load=113/1024=11%, Rehash=0, Collisions=15/155=10%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 2049, inode 2628451): 9 files, no impossibilities.
+# src (device 2049, inode 2628457): 5 files, no impossibilities so far.
+# inc (device 2049, inode 2628453): 5 files, no impossibilities.
+
+# 19 files, no impossibilities in 3 directories.
+
+# Implicit Rules
+
+obj/%.o: src/%.c inc/parson.h inc/base64.h inc/tinymt32.h | obj
+#  recipe to execute (from 'Makefile', line 33):
+	$(CC) -c $(CFLAGS) $< -o $@
+
+# 1 implicit rules, 0 (0.0%) terminal.
+
+# Files
+
+# Not a target:
+inc/tinymt32.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-04 16:00:17.178439049
+#  File has been updated.
+#  Successfully updated.
+
+obj/parson.o: src/parson.c inc/parson.h inc/base64.h inc/tinymt32.h | obj
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'parson'
+#  Last modified 2022-06-04 16:00:17.182439098
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 33):
+	$(CC) -c $(CFLAGS) $< -o $@
+
+ 
+obj/tinymt32.o: src/tinymt32.c inc/parson.h inc/base64.h inc/tinymt32.h | obj
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'tinymt32'
+#  Last modified 2022-06-04 16:00:17.182439098
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 33):
+	$(CC) -c $(CFLAGS) $< -o $@
+
+all: libtinymt32.a libparson.a libbase64.a
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+
+libparson.a: obj/parson.o
+#  Implicit rule search has not been done.
+#  Last modified 2022-06-04 16:00:17.186439147
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 41):
+	$(AR) rcs $@ $^
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-04 16:00:17.178439049
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/parson.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-04 16:00:17.182439098
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/tinymt32.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-04 16:00:17.182439098
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+inc/base64.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-04 16:00:17.178439049
+#  File has been updated.
+#  Successfully updated.
+
+obj/base64.o: src/base64.c inc/parson.h inc/base64.h inc/tinymt32.h | obj
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'base64'
+#  Last modified 2022-06-04 16:00:17.182439098
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 33):
+	$(CC) -c $(CFLAGS) $< -o $@
+
+obj:
+#  Implicit rule search has not been done.
+#  Last modified 2022-06-04 16:00:17.182439098
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 30):
+	mkdir -p $(OBJDIR)
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+libbase64.a: obj/base64.o
+#  Implicit rule search has not been done.
+#  Last modified 2022-06-04 16:00:17.186439147
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 44):
+	$(AR) rcs $@ $^
+
+# Not a target:
+src/base64.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-04 16:00:17.182439098
+#  File has been updated.
+#  Successfully updated.
+
+clean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 22):
+	rm -f libtinymt32.a
+	rm -f libparson.a
+	rm -f libbase64.a
+	rm -f $(OBJDIR)/*.o
+
+libtinymt32.a: obj/tinymt32.o
+#  Implicit rule search has not been done.
+#  Last modified 2022-06-04 16:00:17.182439098
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 38):
+	$(AR) rcs $@ $^
+
+# Not a target:
+inc/parson.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-04 16:00:17.178439049
+#  File has been updated.
+#  Successfully updated.
+
+# files hash-table stats:
+# Load=18/1024=2%, Rehash=0, Collisions=0/71=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 36 / storage = 354 B / avg = 9 B
+# current buf: size = 8162 B / used = 354 B / count = 36 / avg = 9 B
+
+# strcache performance: lookups = 88 / hit rate = 59%
+# hash-table stats:
+# Load=36/8192=0%, Rehash=0, Collisions=3/88=3%
+# Finished Make data base on Sat Jun  4 19:03:44 2022
+
+ 
+make all -e -C libloragw
+ 
+# GNU Make 4.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2014 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Sat Jun  4 19:03:44 2022
+
+# Variables
+
+# makefile (from '../target.cfg', line 10)
+TARGET_USR = pi
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+DESKTOP_SESSION = Lubuntu
+# default
+.SHELLFLAGS := -c
+# makefile (from 'library.cfg', line 16)
+DEBUG_CAL = 0
+# environment
+XDG_SESSION_TYPE = x11
+# environment
+VSCODE_LOG_NATIVE = false
+ 
+# makefile (from 'library.cfg', line 12)
+DEBUG_HAL = 0
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# makefile (from 'Makefile', line 17)
+INCLUDES = $(wildcard inc/*.h) $(wildcard ../libtools/inc/*.h)
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+XAUTHORITY = /home/bruce/.Xauthority
+# environment
+GDMSESSION = Lubuntu
+# default
+MAKE_VERSION := 4.1
+# environment under -e
+CURDIR = /home/bruce/github/openwrt/sx1302_hal
+# makefile
+SHELL = /bin/sh
+# environment
+GDM_LANG = en_US
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+_ = /usr/bin/code
+# makefile (from 'Makefile', line 14)
+CFLAGS := -O2 -Wall -Wextra -std=c99 -Iinc -I. -I../libtools/inc
+# environment
+XDG_CONFIG_DIRS = /etc/xdg/lubuntu:/etc/xdg/xdg-Lubuntu:/etc/xdg
+# environment under -e
+MAKEFILE_LIST =  Makefile
+# automatic
+@F = $(notdir $@)
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment under -e
+MAKELEVEL := 1
+# environment
+MANDATORY_PATH = /usr/share/gconf/Lubuntu.mandatory.path
+# environment
+XDG_DATA_DIRS = /etc/xdg/lubuntu:/usr/local/share:/usr/share:/usr/share/gdm:/var/lib/menu-xdg:/usr/share/Lubuntu:/usr/local/share/:/usr/share/
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:abstract=/tmp/dbus-APu3yFsH8b,guid=9f81add14c406721bcc3295f629b0f8d
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
+# environment
+LC_NAME = lzh_TW
+# environment
+VSCODE_CWD = /home/bruce/github/openwrt/sx1302_hal
+# environment
+XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session0
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+PATH = /home/bruce/bin:/home/bruce/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+# makefile (from '../target.cfg', line 7)
+TARGET_DIR = /home/pi/sx1302_hal/bin
+# environment
+_LXSESSION_PID = 1272
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# environment
+LC_ALL = C
+# makefile (from 'library.cfg', line 10)
+DEBUG_I2C = 0
+# makefile (from 'Makefile', line 12)
+AR := ar
+# environment
+XDG_MENU_PREFIX = lxde-
+# environment
+VSCODE_LOG_STACK = false
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# environment
+XDG_GREETER_DATA_DIR = /var/lib/lightdm-data/bruce
+# environment
+LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+# environment
+XDG_SESSION_DESKTOP = Lubuntu
+# environment
+SSH_AUTH_SOCK = /tmp/ssh-vbig37v2Vxx4/agent.1272
+# automatic
+%F = $(notdir $%)
+# environment
+DISPLAY = :0
+# environment
+VSCODE_PIPE_LOGGING = true
+# makefile (from '../target.cfg', line 4)
+TARGET_IP = localhost
+# makefile (from 'library.cfg', line 17)
+DEBUG_SX1302 = 0
+# environment
+PWD = /home/bruce/github/openwrt/sx1302_hal
+# environment
+QT_QPA_PLATFORMTHEME = lxqt
+# environment
+XDG_SEAT = seat0
+# environment
+SSH_AGENT_PID = 1318
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = LXDE
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/bruce
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
+# makefile (from 'library.cfg', line 13)
+DEBUG_LBT = 0
+# environment
+VSCODE_CLI = 1
+# environment
+VSCODE_CODE_CACHE_PATH = /home/bruce/.config/Code/CachedData/da15b6fd3ef856477bf6f4fb29ba1b7af717770d
+# environment
+LOGNAME = bruce
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# automatic
++F = $(notdir $+)
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+XDG_VTNR = 7
+# environment
+LC_TIME = lzh_TW
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 1
+# makefile (from 'library.cfg', line 18)
+DEBUG_FTIME = 0
+# makefile (from 'Makefile', line 11)
+CC := gcc
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-0b6eceae-5821-4e87-85cd-d3c051951595.sock
+# environment
+XDG_SESSION_ID = c2
+# environment
+USER = bruce
+# environment
+LC_MONETARY = lzh_TW
+# makefile
+.DEFAULT_GOAL := all
+# environment
+XDG_CURRENT_DESKTOP = LXDE
+# makefile (from 'library.cfg', line 7)
+DEBUG_AUX = 0
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+SAL_USE_VCLPLUGIN = gtk
+# environment
+LC_TELEPHONE = lzh_TW
+# default
+MAKE_COMMAND := make
+# environment
+OLDPWD = /home/bruce/github/openwrt
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# environment
+LANGUAGE = en_US
+# makefile (from 'library.cfg', line 15)
+DEBUG_RAD = 0
+# environment
+XDG_SEAT_PATH = /org/freedesktop/DisplayManager/Seat0
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-dae61406-1.67.1-main.sock
+# makefile (from 'library.cfg', line 11)
+DEBUG_REG = 0
+# environment
+ARCH = 
+# environment under -e
+MAKEFLAGS = epqrRw
+# environment under -e
+MFLAGS = -epqrRw
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# makefile (from 'library.cfg', line 14)
+DEBUG_GPS = 0
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+GDK_BACKEND = x11
+# environment
+QT_PLATFORM_PLUGIN = lxqt
+# environment
+LC_PAPER = lzh_TW
+# environment
+NO_AT_BRIDGE = 1
+# environment
+DEFAULTS_PATH = /usr/share/gconf/Lubuntu.default.path
+# environment
+CROSS_COMPILE = 
+# default
+MAKEFILES := 
+# environment
+LC_NUMERIC = lzh_TW
+# automatic
+<F = $(notdir $<)
+# makefile (from 'Makefile', line 16)
+OBJDIR = obj
+# environment
+LC_MEASUREMENT = lzh_TW
+# environment
+XDG_CONFIG_HOME = /home/bruce/.config
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# makefile (from 'library.cfg', line 9)
+DEBUG_MCU = 0
+# makefile (from 'Makefile', line 3)
+LIBLORAGW_VERSION := `cat ../VERSION`
+# makefile (from 'Makefile', line 21)
+LIBS := -lloragw -ltinymt32 -lrt -lm
+# automatic
+^F = $(notdir $^)
+# makefile (from 'library.cfg', line 8)
+DEBUG_COM = 0
+# default
+SUFFIXES := 
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# environment
+LC_IDENTIFICATION = lzh_TW
+# default
+.RECIPEPREFIX := 
+# environment
+LC_ADDRESS = lzh_TW
+# environment
+LANG = C
+# environment
+TERM = xterm
+# environment
+VSCODE_PID = 2207
+# variable set hash-table stats:
+# Load=130/1024=13%, Rehash=0, Collisions=19/209=9%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 2049, inode 2628323): 23 files, no impossibilities.
+# src (device 2049, inode 2628360): 2 files, no impossibilities so far.
+# inc (device 2049, inode 2628325): 34 files, no impossibilities.
+# ../libtools/inc (device 2049, inode 2628453): 5 files, no impossibilities.
+
+# 64 files, no impossibilities in 4 directories.
+
+# Implicit Rules
+
+obj/%.o: src/%.c inc/sx1250_spi.h inc/loragw_ad5338r.h inc/loragw_sx125x.h inc/loragw_spi.h inc/sx1250_defs.h inc/loragw_gps.h inc/loragw_sx1302.h inc/config.h inc/loragw_sx1302_rx.h inc/loragw_aux.h inc/sx1250_usb.h inc/loragw_usb.h inc/loragw_stts751.h inc/sx1261_usb.h inc/loragw_lbt.h inc/sx125x_com.h inc/loragw_mcu.h inc/loragw_com.h inc/loragw_hal.h inc/loragw_debug.h inc/sx125x_spi.h inc/loragw_cal.h inc/loragw_reg.h inc/loragw_i2c.h inc/sx1261_defs.h inc/loragw_sx1250.h inc/loragw_sx1302_timestamp.h inc/loragw_sx1261.h inc/sx1261_spi.h inc/loragw_agc_params.h inc/sx1250_com.h inc/sx1261_com.h ../libtools/inc/parson.h ../libtools/inc/base64.h ../libtools/inc/tinymt32.h inc/config.h | obj
+#  recipe to execute (from 'Makefile', line 99):
+	$(CC) -c $(CFLAGS) $< -o $@
+
+# 1 implicit rules, 0 (0.0%) terminal.
+
+# Files
+
+# Not a target:
+obj/sx1250_usb.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ 
+tst/test_loragw_com_sx1250.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+obj/loragw_gps.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+obj/loragw_spi.o: src/loragw_spi.c inc/sx1250_spi.h inc/loragw_ad5338r.h inc/loragw_sx125x.h inc/loragw_spi.h inc/sx1250_defs.h inc/loragw_gps.h inc/loragw_sx1302.h inc/config.h inc/loragw_sx1302_rx.h inc/loragw_aux.h inc/sx1250_usb.h inc/loragw_usb.h inc/loragw_stts751.h inc/sx1261_usb.h inc/loragw_lbt.h inc/sx125x_com.h inc/loragw_mcu.h inc/loragw_com.h inc/loragw_hal.h inc/loragw_debug.h inc/sx125x_spi.h inc/loragw_cal.h inc/loragw_reg.h inc/loragw_i2c.h inc/sx1261_defs.h inc/loragw_sx1250.h inc/loragw_sx1302_timestamp.h inc/loragw_sx1261.h inc/sx1261_spi.h inc/loragw_agc_params.h inc/sx1250_com.h inc/sx1261_com.h ../libtools/inc/parson.h ../libtools/inc/base64.h ../libtools/inc/tinymt32.h inc/config.h | obj
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'loragw_spi'
+#  Last modified 2022-06-04 16:00:17.146438657
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := obj/loragw_spi.o
+# automatic
+# % := 
+# automatic
+# * := loragw_spi
+# automatic
+# + := src/loragw_spi.c inc/sx1250_spi.h inc/loragw_ad5338r.h inc/loragw_sx125x.h inc/loragw_spi.h inc/sx1250_defs.h inc/loragw_gps.h inc/loragw_sx1302.h inc/config.h inc/loragw_sx1302_rx.h inc/loragw_aux.h inc/sx1250_usb.h inc/loragw_usb.h inc/loragw_stts751.h inc/sx1261_usb.h inc/loragw_lbt.h inc/sx125x_com.h inc/loragw_mcu.h inc/loragw_com.h inc/loragw_hal.h inc/loragw_debug.h inc/sx125x_spi.h inc/loragw_cal.h inc/loragw_reg.h inc/loragw_i2c.h inc/sx1261_defs.h inc/loragw_sx1250.h inc/loragw_sx1302_timestamp.h inc/loragw_sx1261.h inc/sx1261_spi.h inc/loragw_agc_params.h inc/sx1250_com.h inc/sx1261_com.h ../libtools/inc/parson.h ../libtools/inc/base64.h ../libtools/inc/tinymt32.h inc/config.h
+# automatic
+# | := obj
+# automatic
+# < := src/loragw_spi.c
+# automatic
+# ^ := src/loragw_spi.c inc/sx1250_spi.h inc/loragw_ad5338r.h inc/loragw_sx125x.h inc/loragw_spi.h inc/sx1250_defs.h inc/loragw_gps.h inc/loragw_sx1302.h inc/config.h inc/loragw_sx1302_rx.h inc/loragw_aux.h inc/sx1250_usb.h inc/loragw_usb.h inc/loragw_stts751.h inc/sx1261_usb.h inc/loragw_lbt.h inc/sx125x_com.h inc/loragw_mcu.h inc/loragw_com.h inc/loragw_hal.h inc/loragw_debug.h inc/sx125x_spi.h inc/loragw_cal.h inc/loragw_reg.h inc/loragw_i2c.h inc/sx1261_defs.h inc/loragw_sx1250.h inc/loragw_sx1302_timestamp.h inc/loragw_sx1261.h inc/sx1261_spi.h inc/loragw_agc_params.h inc/sx1250_com.h inc/sx1261_com.h ../libtools/inc/parson.h ../libtools/inc/base64.h ../libtools/inc/tinymt32.h
+# automatic
+# ? := ../libtools/inc/parson.h ../libtools/inc/base64.h ../libtools/inc/tinymt32.h
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/15=7%
+#  recipe to execute (from 'Makefile', line 99):
+	$(CC) -c $(CFLAGS) $< -o $@
+
+# Not a target:
+obj/sx1261_com.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+tst/test_loragw_i2c.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+inc/loragw_mcu.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-04 16:00:17.114438265
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+inc/loragw_hal.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-04 16:00:17.110438216
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+inc/sx1261_spi.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-04 16:00:17.122438364
+#  File has been updated.
+#  Successfully updated.
+
+all: libloragw.a test_loragw_com test_loragw_i2c test_loragw_reg test_loragw_hal_tx test_loragw_hal_rx test_loragw_cal_sx125x test_loragw_capture_ram test_loragw_com_sx1250 test_loragw_com_sx1261 test_loragw_counter test_loragw_gps test_loragw_toa test_loragw_sx1261_rssi
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/5=0%
+
+# Not a target:
+../VERSION:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-04 16:00:17.106438168
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+obj/loragw_cal.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+obj/loragw_mcu.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+obj/loragw_hal.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+obj/sx1261_spi.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+test_loragw_com_sx1250: tst/test_loragw_com_sx1250.c libloragw.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 157):
+	$(CC) $(CFLAGS) -L. -L../libtools  $< -o $@ $(LIBS)
+
+# Not a target:
+tst/test_loragw_hal_tx.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+libloragw.a: obj/loragw_spi.o obj/loragw_usb.o obj/loragw_com.o obj/loragw_mcu.o obj/loragw_i2c.o obj/sx125x_spi.o obj/sx125x_com.o obj/sx1250_spi.o obj/sx1250_usb.o obj/sx1250_com.o obj/sx1261_spi.o obj/sx1261_usb.o obj/sx1261_com.o obj/loragw_aux.o obj/loragw_reg.o obj/loragw_sx1250.o obj/loragw_sx1261.o obj/loragw_sx125x.o obj/loragw_sx1302.o obj/loragw_cal.o obj/loragw_debug.o obj/loragw_hal.o obj/loragw_lbt.o obj/loragw_stts751.o obj/loragw_gps.o obj/loragw_sx1302_timestamp.o obj/loragw_sx1302_rx.o obj/loragw_ad5338r.o
+#  Implicit rule search has not been done.
+#  Last modified 2022-06-04 16:00:17.158438805
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/5=0%
+#  recipe to execute (from 'Makefile', line 131):
+	$(AR) rcs $@ $^
+
+# Not a target:
+obj/loragw_ad5338r.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+test_loragw_i2c: tst/test_loragw_i2c.c libloragw.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 139):
+	$(CC) $(CFLAGS) -L. -L../libtools $< -o $@ $(LIBS)
+
+# Not a target:
+inc/loragw_sx1261.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-04 16:00:17.114438265
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+inc/loragw_sx1302_timestamp.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-04 16:00:17.118438314
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-04 16:00:17.106438168
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+../libtools/inc/tinymt32.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-04 16:00:17.178439049
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/loragw_spi.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-04 16:00:17.130438462
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+tst/test_loragw_reg.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+inc/loragw_sx1302_rx.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-04 16:00:17.118438314
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+inc/sx1250_defs.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-04 16:00:17.118438314
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+obj/loragw_sx1261.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+obj/loragw_sx1302_timestamp.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+inc/sx1250_com.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-04 16:00:17.118438314
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+obj/loragw_sx1302_rx.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+inc/loragw_i2c.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-04 16:00:17.110438216
+#  File has been updated.
+#  Successfully updated.
+
+test_loragw_hal_tx: tst/test_loragw_hal_tx.c libloragw.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 145):
+	$(CC) $(CFLAGS) -L. -L../libtools $< -o $@ $(LIBS)
+
+# Not a target:
+tst/test_loragw_cal_sx125x.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+obj/sx1250_com.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+inc/loragw_usb.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-04 16:00:17.118438314
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+tst/test_loragw_toa.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+inc/loragw_sx1302.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-04 16:00:17.118438314
+#  File has been updated.
+#  Successfully updated.
+
+ 
+# Not a target:
+inc/loragw_lbt.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-04 16:00:17.110438216
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+inc/sx1250_spi.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-04 16:00:17.118438314
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+inc/loragw_debug.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-04 16:00:17.110438216
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+obj/loragw_i2c.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+tst/test_loragw_com.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+test_loragw_reg: tst/test_loragw_reg.c libloragw.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 142):
+	$(CC) $(CFLAGS) -L. -L../libtools $< -o $@ $(LIBS)
+
+# Not a target:
+obj/loragw_lbt.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+obj/loragw_usb.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+obj:
+#  Implicit rule search has not been done.
+#  Last modified 2022-06-04 16:00:17.154438756
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 96):
+	mkdir -p $(OBJDIR)
+
+# Not a target:
+obj/loragw_sx1302.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+obj/sx1250_spi.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+inc/sx125x_com.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-04 16:00:17.122438364
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+inc/sx1261_usb.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-04 16:00:17.122438364
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+tst/test_loragw_sx1261_rssi.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+inc/loragw_stts751.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-04 16:00:17.114438265
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+inc/loragw_aux.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-04 16:00:17.110438216
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+tst/test_loragw_hal_rx.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+tst/test_loragw_gps.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+../libtools/inc/base64.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-04 16:00:17.178439049
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+obj/sx125x_com.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+obj/sx1261_usb.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+inc/loragw_sx1250.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-04 16:00:17.114438265
+#  File has been updated.
+#  Successfully updated.
+
+test_loragw_cal_sx125x: tst/test_loragw_cal_sx125x.c libloragw.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 154):
+	$(CC) $(CFLAGS) -L. -L../libtools  $< -o $@ $(LIBS)
+
+# Not a target:
+tst/test_loragw_com_sx1261.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+obj/loragw_stts751.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+test_loragw_toa: tst/test_loragw_toa.c libloragw.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 169):
+	$(CC) $(CFLAGS) -L. -L../libtools  $< -o $@ $(LIBS)
+
+# Not a target:
+obj/loragw_aux.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+inc/sx125x_spi.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-04 16:00:17.122438364
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+inc/loragw_reg.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-04 16:00:17.114438265
+#  File has been updated.
+#  Successfully updated.
+
+clean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 41):
+	rm -f libloragw.a
+	rm -f test_loragw_*
+	rm -f $(OBJDIR)/*.o
+	rm -f inc/config.h
+
+# Not a target:
+tst/test_loragw_counter.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+test_loragw_com: tst/test_loragw_com.c libloragw.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 136):
+	$(CC) $(CFLAGS) -L. -L../libtools $< -o $@ $(LIBS)
+
+# Not a target:
+inc/loragw_ad5338r.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-04 16:00:17.110438216
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+obj/loragw_sx1250.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+obj/sx125x_spi.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+obj/loragw_reg.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+test_loragw_sx1261_rssi: tst/test_loragw_sx1261_rssi.c libloragw.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 172):
+	$(CC) $(CFLAGS) -L. -L../libtools  $< -o $@ $(LIBS)
+
+# Not a target:
+tst/test_loragw_capture_ram.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+../target.cfg:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-04 16:00:17.198439294
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+library.cfg:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-04 16:00:17.122438364
+#  File has been updated.
+#  Successfully updated.
+
+test_loragw_com_sx1261: tst/test_loragw_com_sx1261.c libloragw.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 160):
+	$(CC) $(CFLAGS) -L. -L../libtools  $< -o $@ $(LIBS)
+
+test_loragw_hal_rx: tst/test_loragw_hal_rx.c libloragw.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+ 
+#  recipe to execute (from 'Makefile', line 148):
+	$(CC) $(CFLAGS) -L. -L../libtools $< -o $@ $(LIBS)
+
+inc/config.h: ../VERSION library.cfg
+#  Implicit rule search has not been done.
+#  Last modified 2022-06-04 16:00:17.122438364
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 67):
+	@echo "*** Checking libloragw library configuration ***"
+	@rm -f $@
+	#File initialization
+	@echo "#ifndef _LORAGW_CONFIGURATION_H" >> $@
+	@echo "#define _LORAGW_CONFIGURATION_H" >> $@
+	# Release version
+	@echo "Release version   : $(LIBLORAGW_VERSION)"
+	@echo "	#define LIBLORAGW_VERSION	"\"$(LIBLORAGW_VERSION)\""" >> $@
+	# Debug options
+	@echo "	#define DEBUG_AUX		$(DEBUG_AUX)" >> $@
+	@echo "	#define DEBUG_COM		$(DEBUG_COM)" >> $@
+	@echo "	#define DEBUG_MCU		$(DEBUG_MCU)" >> $@
+	@echo "	#define DEBUG_I2C		$(DEBUG_I2C)" >> $@
+	@echo "	#define DEBUG_REG		$(DEBUG_REG)" >> $@
+	@echo "	#define DEBUG_HAL		$(DEBUG_HAL)" >> $@
+	@echo "	#define DEBUG_GPS		$(DEBUG_GPS)" >> $@
+	@echo "	#define DEBUG_GPIO		$(DEBUG_GPIO)" >> $@
+	@echo "	#define DEBUG_LBT		$(DEBUG_LBT)" >> $@
+	@echo "	#define DEBUG_RAD		$(DEBUG_RAD)" >> $@
+	@echo "	#define DEBUG_CAL		$(DEBUG_CAL)" >> $@
+	@echo "	#define DEBUG_SX1302	$(DEBUG_SX1302)" >> $@
+	@echo "	#define DEBUG_FTIME		$(DEBUG_FTIME)" >> $@
+	# end of file
+	@echo "#endif" >> $@
+	@echo "*** Configuration seems ok ***"
+
+test_loragw_gps: tst/test_loragw_gps.c libloragw.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 166):
+	$(CC) $(CFLAGS) -L. -L../libtools  $< -o $@ $(LIBS)
+
+# Not a target:
+inc/loragw_sx125x.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-04 16:00:17.114438265
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+inc/loragw_com.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-04 16:00:17.110438216
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+../libtools/inc/parson.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-04 16:00:17.178439049
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+obj/loragw_debug.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+test_loragw_counter: tst/test_loragw_counter.c libloragw.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 163):
+	$(CC) $(CFLAGS) -L. -L../libtools  $< -o $@ $(LIBS)
+
+# Not a target:
+obj/loragw_sx125x.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+obj/loragw_com.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+inc/sx1250_usb.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-04 16:00:17.118438314
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+inc/sx1261_defs.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-04 16:00:17.122438364
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+inc/loragw_cal.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-04 16:00:17.110438216
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+inc/loragw_gps.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-04 16:00:17.110438216
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+inc/loragw_spi.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-04 16:00:17.114438265
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+inc/sx1261_com.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-04 16:00:17.122438364
+#  File has been updated.
+#  Successfully updated.
+
+install:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 50):
+	@echo "---- Copying libloragw files to $(TARGET_IP):$(TARGET_DIR)"
+	@ssh $(TARGET_USR)@$(TARGET_IP) "mkdir -p $(TARGET_DIR)"
+	@scp test_loragw_* $(TARGET_USR)@$(TARGET_IP):$(TARGET_DIR)
+	@scp ../tools/reset_lgw.sh $(TARGET_USR)@$(TARGET_IP):$(TARGET_DIR)
+
+test_loragw_capture_ram: tst/test_loragw_capture_ram.c libloragw.a
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 151):
+	$(CC) $(CFLAGS) -L. -L../libtools  $< -o $@ $(LIBS)
+
+# Not a target:
+inc/loragw_agc_params.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-04 16:00:17.110438216
+#  File has been updated.
+#  Successfully updated.
+
+# files hash-table stats:
+# Load=101/1024=10%, Rehash=0, Collisions=20/275=7%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 151 / storage = 2520 B / avg = 16 B
+# current buf: size = 8162 B / used = 2520 B / count = 151 / avg = 16 B
+
+# strcache performance: lookups = 305 / hit rate = 50%
+# hash-table stats:
+# Load=151/8192=2%, Rehash=0, Collisions=6/305=2%
+# Finished Make data base on Sat Jun  4 19:03:44 2022
+
+Makefile:17: recipe for target 'libloragw' failed
+# GNU Make 4.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2014 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Sat Jun  4 19:03:44 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+DESKTOP_SESSION = Lubuntu
+# default
+.SHELLFLAGS := -c
+# environment
+XDG_SESSION_TYPE = x11
+# environment
+VSCODE_LOG_NATIVE = false
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+XAUTHORITY = /home/bruce/.Xauthority
+# environment
+GDMSESSION = Lubuntu
+# default
+MAKE_VERSION := 4.1
+# makefile
+CURDIR := /home/bruce/github/openwrt/sx1302_hal
+# makefile
+SHELL = /bin/sh
+# environment
+GDM_LANG = en_US
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+_ = /usr/bin/code
+# environment
+XDG_CONFIG_DIRS = /etc/xdg/lubuntu:/etc/xdg/xdg-Lubuntu:/etc/xdg
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# automatic
+@F = $(notdir $@)
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+MAKELEVEL := 0
+# environment
+MANDATORY_PATH = /usr/share/gconf/Lubuntu.mandatory.path
+# environment
+XDG_DATA_DIRS = /etc/xdg/lubuntu:/usr/local/share:/usr/share:/usr/share/gdm:/var/lib/menu-xdg:/usr/share/Lubuntu:/usr/local/share/:/usr/share/
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:abstract=/tmp/dbus-APu3yFsH8b,guid=9f81add14c406721bcc3295f629b0f8d
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
+# environment
+LC_NAME = lzh_TW
+# environment
+VSCODE_CWD = /home/bruce/github/openwrt/sx1302_hal
+# environment
+XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session0
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+PATH = /home/bruce/bin:/home/bruce/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+# environment
+_LXSESSION_PID = 1272
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# environment
+XDG_MENU_PREFIX = lxde-
+# environment
+VSCODE_LOG_STACK = false
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# environment
+XDG_GREETER_DATA_DIR = /var/lib/lightdm-data/bruce
+# environment
+LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+# environment
+XDG_SESSION_DESKTOP = Lubuntu
+# environment
+SSH_AUTH_SOCK = /tmp/ssh-vbig37v2Vxx4/agent.1272
+# automatic
+%F = $(notdir $%)
+# environment
+DISPLAY = :0
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+PWD = /home/bruce/github/openwrt/sx1302_hal
+# environment
+QT_QPA_PLATFORMTHEME = lxqt
+# environment
+XDG_SEAT = seat0
+# environment
+SSH_AGENT_PID = 1318
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = LXDE
+ 
+make: *** [libloragw] Error 1
+
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/bruce
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
+# environment
+VSCODE_CLI = 1
+# environment
+VSCODE_CODE_CACHE_PATH = /home/bruce/.config/Code/CachedData/da15b6fd3ef856477bf6f4fb29ba1b7af717770d
+# environment
+LOGNAME = bruce
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# automatic
++F = $(notdir $+)
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+XDG_VTNR = 7
+# environment
+LC_TIME = lzh_TW
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 1
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-0b6eceae-5821-4e87-85cd-d3c051951595.sock
+# environment
+XDG_SESSION_ID = c2
+# environment
+USER = bruce
+# environment
+LC_MONETARY = lzh_TW
+# makefile
+.DEFAULT_GOAL := all
+# environment
+XDG_CURRENT_DESKTOP = LXDE
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+SAL_USE_VCLPLUGIN = gtk
+# environment
+LC_TELEPHONE = lzh_TW
+# default
+MAKE_COMMAND := make
+# environment
+OLDPWD = /home/bruce/github/openwrt
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# environment
+LANGUAGE = en_US
+# environment
+XDG_SEAT_PATH = /org/freedesktop/DisplayManager/Seat0
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-dae61406-1.67.1-main.sock
+# makefile (from 'Makefile', line 3)
+ARCH = 
+# makefile
+MAKEFLAGS = pqrR
+# environment
+MFLAGS = -pqrR
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+GDK_BACKEND = x11
+# environment
+QT_PLATFORM_PLUGIN = lxqt
+# environment
+LC_PAPER = lzh_TW
+# environment
+NO_AT_BRIDGE = 1
+# environment
+DEFAULTS_PATH = /usr/share/gconf/Lubuntu.default.path
+# makefile (from 'Makefile', line 4)
+CROSS_COMPILE = 
+# default
+MAKEFILES := 
+# environment
+LC_NUMERIC = lzh_TW
+# automatic
+<F = $(notdir $<)
+# environment
+LC_MEASUREMENT = lzh_TW
+# environment
+XDG_CONFIG_HOME = /home/bruce/.config
+# environment
+LC_ALL = C
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# environment
+LC_IDENTIFICATION = lzh_TW
+# default
+.RECIPEPREFIX := 
+# environment
+LC_ADDRESS = lzh_TW
+# environment
+LANG = C
+# environment
+TERM = xterm
+# environment
+VSCODE_PID = 2207
+# variable set hash-table stats:
+# Load=108/1024=11%, Rehash=0, Collisions=14/145=10%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 2049, inode 2628278): 22 files, no impossibilities.
+
+# 22 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+util_boot: libloragw
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 29):
+	$(MAKE) all -e -C $@
+
+all: libtools libloragw packet_forwarder util_net_downlink util_chip_id util_boot util_spectral_scan
+#  Phony target (prerequisite of .PHONY).
+#  Command line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/10=0%
+
+.PHONY: all clean install install_conf libtools libloragw packet_forwarder util_net_downlink util_chip_id util_boot util_spectral_scan
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+util_spectral_scan: libloragw
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 32):
+	$(MAKE) all -e -C $@
+
+libloragw: libtools
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+# automatic
+# @ := libloragw
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := libtools
+# automatic
+# | := 
+# automatic
+# < := libtools
+# automatic
+# ^ := libtools
+# automatic
+# ? := libtools
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=2/14=14%
+#  recipe to execute (from 'Makefile', line 17):
+	$(MAKE) all -e -C $@
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-04 16:00:17.106438168
+#  File has been updated.
+#  Successfully updated.
+
+util_net_downlink: libtools
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 23):
+	$(MAKE) all -e -C $@
+
+packet_forwarder: libloragw
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 20):
+	$(MAKE) all -e -C $@
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+install_conf:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 52):
+	$(MAKE) install_conf -e -C packet_forwarder
+
+util_chip_id: libloragw
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 26):
+	$(MAKE) all -e -C $@
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 35):
+	$(MAKE) clean -e -C libtools
+	$(MAKE) clean -e -C libloragw
+	$(MAKE) clean -e -C packet_forwarder
+	$(MAKE) clean -e -C util_net_downlink
+	$(MAKE) clean -e -C util_chip_id
+	$(MAKE) clean -e -C util_boot
+	$(MAKE) clean -e -C util_spectral_scan
+
+libtools:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+# automatic
+# @ := libtools
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := 
+# automatic
+# | := 
+# automatic
+# < := 
+ 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=2/14=14%
+#  recipe to execute (from 'Makefile', line 14):
+	$(MAKE) all -e -C $@
+
+install:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 44):
+	$(MAKE) install -e -C libloragw
+	$(MAKE) install -e -C packet_forwarder
+	$(MAKE) install -e -C util_net_downlink
+	$(MAKE) install -e -C util_chip_id
+	$(MAKE) install -e -C util_boot
+	$(MAKE) install -e -C util_spectral_scan
+
+# files hash-table stats:
+# Load=15/1024=1%, Rehash=0, Collisions=0/63=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 31 / storage = 321 B / avg = 10 B
+# current buf: size = 8162 B / used = 321 B / count = 31 / avg = 10 B
+
+# strcache performance: lookups = 81 / hit rate = 61%
+# hash-table stats:
+# Load=31/8192=0%, Rehash=0, Collisions=1/81=1%
+# Finished Make data base on Sat Jun  4 19:03:44 2022
+
+ 

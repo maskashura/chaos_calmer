@@ -1,0 +1,121 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/bruce/github/openwrt/sx1302_hal'
+make all -e -C libtools
+make[1]: Entering directory '/home/bruce/github/openwrt/sx1302_hal/libtools'
+mkdir -p obj
+gcc -c -O2 -Wall -Wextra -std=c99 -Iinc -I. src/tinymt32.c -o obj/tinymt32.o
+ar rcs libtinymt32.a obj/tinymt32.o
+gcc -c -O2 -Wall -Wextra -std=c99 -Iinc -I. src/parson.c -o obj/parson.o
+ar rcs libparson.a obj/parson.o
+gcc -c -O2 -Wall -Wextra -std=c99 -Iinc -I. src/base64.c -o obj/base64.o
+ar rcs libbase64.a obj/base64.o
+make[1]: Leaving directory '/home/bruce/github/openwrt/sx1302_hal/libtools'
+make all -e -C libloragw
+make[1]: Entering directory '/home/bruce/github/openwrt/sx1302_hal/libloragw'
+echo "*** Checking libloragw library configuration ***"
+rm -f inc/config.h
+#File initialization
+echo "#ifndef _LORAGW_CONFIGURATION_H" >> inc/config.h
+echo "#define _LORAGW_CONFIGURATION_H" >> inc/config.h
+# Release version
+echo "Release version   : `cat ../VERSION`"
+echo "	#define LIBLORAGW_VERSION	"\"`cat ../VERSION`\""" >> inc/config.h
+# Debug options
+echo "	#define DEBUG_AUX		0" >> inc/config.h
+echo "	#define DEBUG_COM		0" >> inc/config.h
+echo "	#define DEBUG_MCU		0" >> inc/config.h
+echo "	#define DEBUG_I2C		0" >> inc/config.h
+echo "	#define DEBUG_REG		0" >> inc/config.h
+echo "	#define DEBUG_HAL		0" >> inc/config.h
+echo "	#define DEBUG_GPS		0" >> inc/config.h
+echo "	#define DEBUG_GPIO		" >> inc/config.h
+echo "	#define DEBUG_LBT		0" >> inc/config.h
+echo "	#define DEBUG_RAD		0" >> inc/config.h
+echo "	#define DEBUG_CAL		0" >> inc/config.h
+echo "	#define DEBUG_SX1302	0" >> inc/config.h
+echo "	#define DEBUG_FTIME		0" >> inc/config.h
+# end of file
+echo "#endif" >> inc/config.h
+echo "*** Configuration seems ok ***"
+mkdir -p obj
+gcc -c -O2 -Wall -Wextra -std=c99 -Iinc -I. -I../libtools/inc src/loragw_spi.c -o obj/loragw_spi.o
+gcc -c -O2 -Wall -Wextra -std=c99 -Iinc -I. -I../libtools/inc src/loragw_usb.c -o obj/loragw_usb.o
+gcc -c -O2 -Wall -Wextra -std=c99 -Iinc -I. -I../libtools/inc src/loragw_com.c -o obj/loragw_com.o
+gcc -c -O2 -Wall -Wextra -std=c99 -Iinc -I. -I../libtools/inc src/loragw_mcu.c -o obj/loragw_mcu.o
+gcc -c -O2 -Wall -Wextra -std=c99 -Iinc -I. -I../libtools/inc src/loragw_i2c.c -o obj/loragw_i2c.o
+gcc -c -O2 -Wall -Wextra -std=c99 -Iinc -I. -I../libtools/inc src/sx125x_spi.c -o obj/sx125x_spi.o
+gcc -c -O2 -Wall -Wextra -std=c99 -Iinc -I. -I../libtools/inc src/sx125x_com.c -o obj/sx125x_com.o
+gcc -c -O2 -Wall -Wextra -std=c99 -Iinc -I. -I../libtools/inc src/sx1250_spi.c -o obj/sx1250_spi.o
+gcc -c -O2 -Wall -Wextra -std=c99 -Iinc -I. -I../libtools/inc src/sx1250_usb.c -o obj/sx1250_usb.o
+gcc -c -O2 -Wall -Wextra -std=c99 -Iinc -I. -I../libtools/inc src/sx1250_com.c -o obj/sx1250_com.o
+gcc -c -O2 -Wall -Wextra -std=c99 -Iinc -I. -I../libtools/inc src/sx1261_spi.c -o obj/sx1261_spi.o
+gcc -c -O2 -Wall -Wextra -std=c99 -Iinc -I. -I../libtools/inc src/sx1261_usb.c -o obj/sx1261_usb.o
+gcc -c -O2 -Wall -Wextra -std=c99 -Iinc -I. -I../libtools/inc src/sx1261_com.c -o obj/sx1261_com.o
+gcc -c -O2 -Wall -Wextra -std=c99 -Iinc -I. -I../libtools/inc src/loragw_aux.c -o obj/loragw_aux.o
+gcc -c -O2 -Wall -Wextra -std=c99 -Iinc -I. -I../libtools/inc src/loragw_reg.c -o obj/loragw_reg.o
+gcc -c -O2 -Wall -Wextra -std=c99 -Iinc -I. -I../libtools/inc src/loragw_sx1250.c -o obj/loragw_sx1250.o
+gcc -c -O2 -Wall -Wextra -std=c99 -Iinc -I. -I../libtools/inc src/loragw_sx1261.c -o obj/loragw_sx1261.o
+gcc -c -O2 -Wall -Wextra -std=c99 -Iinc -I. -I../libtools/inc src/loragw_sx125x.c -o obj/loragw_sx125x.o
+gcc -c -O2 -Wall -Wextra -std=c99 -Iinc -I. -I../libtools/inc src/loragw_sx1302.c -o obj/loragw_sx1302.o
+gcc -c -O2 -Wall -Wextra -std=c99 -Iinc -I. -I../libtools/inc src/loragw_cal.c -o obj/loragw_cal.o
+gcc -c -O2 -Wall -Wextra -std=c99 -Iinc -I. -I../libtools/inc src/loragw_debug.c -o obj/loragw_debug.o
+gcc -c -O2 -Wall -Wextra -std=c99 -Iinc -I. -I../libtools/inc src/loragw_hal.c -o obj/loragw_hal.o
+gcc -c -O2 -Wall -Wextra -std=c99 -Iinc -I. -I../libtools/inc src/loragw_lbt.c -o obj/loragw_lbt.o
+gcc -c -O2 -Wall -Wextra -std=c99 -Iinc -I. -I../libtools/inc src/loragw_stts751.c -o obj/loragw_stts751.o
+gcc -c -O2 -Wall -Wextra -std=c99 -Iinc -I. -I../libtools/inc src/loragw_gps.c -o obj/loragw_gps.o
+gcc -c -O2 -Wall -Wextra -std=c99 -Iinc -I. -I../libtools/inc src/loragw_sx1302_timestamp.c -o obj/loragw_sx1302_timestamp.o
+gcc -c -O2 -Wall -Wextra -std=c99 -Iinc -I. -I../libtools/inc src/loragw_sx1302_rx.c -o obj/loragw_sx1302_rx.o
+gcc -c -O2 -Wall -Wextra -std=c99 -Iinc -I. -I../libtools/inc src/loragw_ad5338r.c -o obj/loragw_ad5338r.o
+ar rcs libloragw.a obj/loragw_spi.o obj/loragw_usb.o obj/loragw_com.o obj/loragw_mcu.o obj/loragw_i2c.o obj/sx125x_spi.o obj/sx125x_com.o obj/sx1250_spi.o obj/sx1250_usb.o obj/sx1250_com.o obj/sx1261_spi.o obj/sx1261_usb.o obj/sx1261_com.o obj/loragw_aux.o obj/loragw_reg.o obj/loragw_sx1250.o obj/loragw_sx1261.o obj/loragw_sx125x.o obj/loragw_sx1302.o obj/loragw_cal.o obj/loragw_debug.o obj/loragw_hal.o obj/loragw_lbt.o obj/loragw_stts751.o obj/loragw_gps.o obj/loragw_sx1302_timestamp.o obj/loragw_sx1302_rx.o obj/loragw_ad5338r.o
+gcc -O2 -Wall -Wextra -std=c99 -Iinc -I. -I../libtools/inc -L. -L../libtools tst/test_loragw_com.c -o test_loragw_com -lloragw -ltinymt32 -lrt -lm
+gcc -O2 -Wall -Wextra -std=c99 -Iinc -I. -I../libtools/inc -L. -L../libtools tst/test_loragw_i2c.c -o test_loragw_i2c -lloragw -ltinymt32 -lrt -lm
+gcc -O2 -Wall -Wextra -std=c99 -Iinc -I. -I../libtools/inc -L. -L../libtools tst/test_loragw_reg.c -o test_loragw_reg -lloragw -ltinymt32 -lrt -lm
+gcc -O2 -Wall -Wextra -std=c99 -Iinc -I. -I../libtools/inc -L. -L../libtools tst/test_loragw_hal_tx.c -o test_loragw_hal_tx -lloragw -ltinymt32 -lrt -lm
+gcc -O2 -Wall -Wextra -std=c99 -Iinc -I. -I../libtools/inc -L. -L../libtools tst/test_loragw_hal_rx.c -o test_loragw_hal_rx -lloragw -ltinymt32 -lrt -lm
+gcc -O2 -Wall -Wextra -std=c99 -Iinc -I. -I../libtools/inc -L. -L../libtools  tst/test_loragw_cal_sx125x.c -o test_loragw_cal_sx125x -lloragw -ltinymt32 -lrt -lm
+gcc -O2 -Wall -Wextra -std=c99 -Iinc -I. -I../libtools/inc -L. -L../libtools  tst/test_loragw_capture_ram.c -o test_loragw_capture_ram -lloragw -ltinymt32 -lrt -lm
+gcc -O2 -Wall -Wextra -std=c99 -Iinc -I. -I../libtools/inc -L. -L../libtools  tst/test_loragw_com_sx1250.c -o test_loragw_com_sx1250 -lloragw -ltinymt32 -lrt -lm
+gcc -O2 -Wall -Wextra -std=c99 -Iinc -I. -I../libtools/inc -L. -L../libtools  tst/test_loragw_com_sx1261.c -o test_loragw_com_sx1261 -lloragw -ltinymt32 -lrt -lm
+gcc -O2 -Wall -Wextra -std=c99 -Iinc -I. -I../libtools/inc -L. -L../libtools  tst/test_loragw_counter.c -o test_loragw_counter -lloragw -ltinymt32 -lrt -lm
+gcc -O2 -Wall -Wextra -std=c99 -Iinc -I. -I../libtools/inc -L. -L../libtools  tst/test_loragw_gps.c -o test_loragw_gps -lloragw -ltinymt32 -lrt -lm
+gcc -O2 -Wall -Wextra -std=c99 -Iinc -I. -I../libtools/inc -L. -L../libtools  tst/test_loragw_toa.c -o test_loragw_toa -lloragw -ltinymt32 -lrt -lm
+gcc -O2 -Wall -Wextra -std=c99 -Iinc -I. -I../libtools/inc -L. -L../libtools  tst/test_loragw_sx1261_rssi.c -o test_loragw_sx1261_rssi -lloragw -ltinymt32 -lrt -lm
+make[1]: Leaving directory '/home/bruce/github/openwrt/sx1302_hal/libloragw'
+make all -e -C packet_forwarder
+make[1]: Entering directory '/home/bruce/github/openwrt/sx1302_hal/packet_forwarder'
+mkdir -p obj
+gcc -c -O2 -Wall -Wextra -std=c99 -Iinc -I. -I../libtools/inc -D VERSION_STRING="\"`cat ../VERSION`\"" -I../libloragw/inc src/lora_pkt_fwd.c -o obj/lora_pkt_fwd.o
+gcc -c -O2 -Wall -Wextra -std=c99 -Iinc -I. -I../libtools/inc -I../libloragw/inc src/jitqueue.c -o obj/jitqueue.o
+gcc -L../libloragw -L../libtools obj/lora_pkt_fwd.o obj/jitqueue.o -o lora_pkt_fwd -lloragw -ltinymt32 -lparson -lbase64 -lrt -lpthread -lm
+make[1]: Leaving directory '/home/bruce/github/openwrt/sx1302_hal/packet_forwarder'
+make all -e -C util_net_downlink
+make[1]: Entering directory '/home/bruce/github/openwrt/sx1302_hal/util_net_downlink'
+mkdir -p obj
+gcc -c src/net_downlink.c -o obj/net_downlink.o -std=c99 -Wall -Wextra -O2 -ffunction-sections -fdata-sections  -Iinc -I../libtools/inc
+gcc -L../libtools obj/net_downlink.o -o net_downlink -Wl,--gc-sections -lparson -lbase64 -lpthread
+make[1]: Leaving directory '/home/bruce/github/openwrt/sx1302_hal/util_net_downlink'
+make all -e -C util_chip_id
+make[1]: Entering directory '/home/bruce/github/openwrt/sx1302_hal/util_chip_id'
+mkdir -p obj
+gcc -c src/chip_id.c -o obj/chip_id.o -std=c99 -Wall -Wextra -O2 -ffunction-sections -fdata-sections  -Iinc -I../libloragw/inc
+gcc -L../libloragw -L../libtools obj/chip_id.o ../libloragw/libloragw.a -o chip_id -Wl,--gc-sections -lloragw -lm -ltinymt32 -lrt
+make[1]: Leaving directory '/home/bruce/github/openwrt/sx1302_hal/util_chip_id'
+make all -e -C util_boot
+make[1]: Entering directory '/home/bruce/github/openwrt/sx1302_hal/util_boot'
+mkdir -p obj
+gcc -c src/boot.c -o obj/boot.o -std=c99 -Wall -Wextra -O2 -ffunction-sections -fdata-sections  -Iinc -I../libloragw/inc
+gcc -L../libloragw -L../libtools obj/boot.o ../libloragw/libloragw.a -o boot -Wl,--gc-sections -lloragw -lm -ltinymt32 -lrt
+make[1]: Leaving directory '/home/bruce/github/openwrt/sx1302_hal/util_boot'
+make all -e -C util_spectral_scan
+make[1]: Entering directory '/home/bruce/github/openwrt/sx1302_hal/util_spectral_scan'
+mkdir -p obj
+gcc -c src/spectral_scan.c -o obj/spectral_scan.o -std=c99 -Wall -Wextra -O2 -ffunction-sections -fdata-sections  -Iinc -I../libloragw/inc
+gcc -L../libloragw -L../libtools obj/spectral_scan.o ../libloragw/libloragw.a -o spectral_scan -Wl,--gc-sections -lloragw -lm -ltinymt32 -lrt
+make[1]: Leaving directory '/home/bruce/github/openwrt/sx1302_hal/util_spectral_scan'
+make: Leaving directory '/home/bruce/github/openwrt/sx1302_hal'
+ 
+Makefile:27: /\/\/\/  Building in 'release' mode \/\/\/\
+Makefile:27: /\/\/\/  Building in 'release' mode \/\/\/\
+Makefile:27: /\/\/\/  Building in 'release' mode \/\/\/\
+Makefile:27: /\/\/\/  Building in 'release' mode \/\/\/\
+
